@@ -44,6 +44,16 @@ func main()  {
 	sort.Ints(highScores)
 	fmt.Println(highScores)
 
+
+	///how to remove a value from slice based on index
+
+	var courses = []string {"reactjs","golang","typescript","sql","swift"}
+	///remove index 2 ( typscript)
+	fmt.Println(courses)
+	var indexToBeRemoved int = 2
+
+	courses = append(courses[:indexToBeRemoved],courses[indexToBeRemoved+1:]...)
+	fmt.Println(courses)
 }
 
 
