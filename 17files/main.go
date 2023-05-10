@@ -15,15 +15,10 @@ func main()  {
 
 	file,err := os.Create("./myFile.text")
 
-     if err != nil{
-		panic(err)
-	 }
-
+     checkNilErr(err)
 	 length,err := io.WriteString(file,content)
 
-	 if err != nil{
-		panic(err)
-	 }
+	 checkNilErr(err)
 	 fmt.Println("length is :",length)
 
 	 defer file.Close()
