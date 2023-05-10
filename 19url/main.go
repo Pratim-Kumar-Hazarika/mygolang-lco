@@ -34,7 +34,7 @@ func main()  {
 		Scheme: "https",
 		Host: "pratim.com",
 		Path: "/billionaire",
-		RawPath: "user=xx",
+		RawQuery: "user=xx",
 	}
 	anotherUrl := partsOfUrl
 
