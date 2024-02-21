@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"strings"
 )
@@ -27,7 +27,7 @@ func PostRequest (){
 	checkNilErr(err)
 	defer response.Body.Close()
 
-	content ,_ := ioutil.ReadAll(response.Body)
+	content ,_ := io.ReadAll(response.Body)
 	fmt.Println(string(content))
 }
 

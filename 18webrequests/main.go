@@ -2,11 +2,10 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"net/http"
 )
 
-const url = "https://roundhightechmigration.pratim-kumarkum.repl.co"
+const url = "https://lco.dev"
  
 func main(){
 
@@ -15,13 +14,13 @@ func main(){
 	checkNilErr(err)
 
 	fmt.Printf("Response is of type %T\n",response)
-
+	fmt.Println("Status code ", response.TLS.ServerName)
 	defer response.Body.Close()
 
-	databytes,err := ioutil.ReadAll(response.Body)
-	checkNilErr(err)
-	content := string(databytes)
-	fmt.Println(content)
+	// databytes,err := io.ReadAll(response.Body)
+	// checkNilErr(err)
+	// content := databytes
+	// fmt.Println(content)
 
 
 }

@@ -12,7 +12,7 @@ func main()  {
 
 	fmt.Printf("The email is %v\n",pratim.Email)
 
-	pratim.GetStatus()
+	 pratim.GetStatus()
 	pratim.ManipulateEmail()
 
 	fmt.Println("After manipulation----")

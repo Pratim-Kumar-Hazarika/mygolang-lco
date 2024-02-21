@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 )
 
@@ -11,7 +10,7 @@ import (
 func main()  {
 	fmt.Println("Welcome to Files in golang")
 
-	content := "Hello welcome to Namaste Golang with Pratim :P"
+	content := "Hello welcomeP"
 
 	file,err := os.Create("./myFile.text")
 
@@ -27,7 +26,7 @@ func main()  {
 }
 
 func readFile(filename string){
-	databyte,err := ioutil.ReadFile(filename)
+	databyte,err := os.ReadFile(filename)
 	checkNilErr(err)
 	
 	fmt.Println("Raw databytes ",string(databyte))

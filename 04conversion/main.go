@@ -12,7 +12,7 @@ func main(){
 	fmt.Println("Welcome to our Ftv appp!!")
 
 	fmt.Println("Please enter a number bc")
-	reader :=bufio.NewReader(os.Stdin)
+	reader :=bufio.NewReader(os.Stdin)//os.Standard input
 
 	input,_ := reader.ReadString('\n')
 

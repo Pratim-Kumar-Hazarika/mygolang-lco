@@ -11,6 +11,8 @@ func main()  {
 	fmt.Printf("The value of %+v ",pratim)
 
 	fmt.Printf("The email is %v ",pratim.Email)
+
+	
 }
 
 type User struct {
